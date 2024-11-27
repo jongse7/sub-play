@@ -229,7 +229,7 @@ class _ContentsScreenState extends State<ContentsScreen> {
                         ),
                       ),
                       child: SizedBox(
-                        width: width * 0.6,
+                        width: width * 0.55,
                         child: Center(
                           child: Text(
                             '재생 시작',

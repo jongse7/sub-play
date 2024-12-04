@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sub_play/favorite/view/favorite_screen.dart';
+import 'package:sub_play/interest/view/interest_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // 로그인 버튼 클릭 시 RootTab으로 이동
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => FavoriteScreen()),
+                  MaterialPageRoute(builder: (context) => InterestScreen()),
                 );
               }
                   : null,

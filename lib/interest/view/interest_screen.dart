@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../subway/view/subway_screen.dart';
 
-class FavoriteScreen extends StatefulWidget {
-  const FavoriteScreen({Key? key}) : super(key: key);
+class InterestScreen extends StatefulWidget {
+  const InterestScreen({Key? key}) : super(key: key);
 
   @override
-  State<FavoriteScreen> createState() => _FavoriteScreenState();
+  State<InterestScreen> createState() => _InterestScreenState();
 }
 
-class _FavoriteScreenState extends State<FavoriteScreen>
+class _InterestScreenState extends State<InterestScreen>
     with SingleTickerProviderStateMixin {
   final List<String> topics = [
     '코미디', '드라마', '예능', '애니메이션', '노래', '시사', '아이돌', '미스터리',

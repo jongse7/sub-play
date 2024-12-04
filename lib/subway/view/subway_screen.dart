@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:sub_play/contents/view/contents_screen.dart';
 import 'package:sub_play/subway/const/mockStations.dart';
+
+import '../../play/view/recommend_screen.dart';
 
 class SubwayScreen extends StatefulWidget {
   const SubwayScreen({Key? key}) : super(key: key);
@@ -274,7 +275,7 @@ class _SubwayScreenState extends State<SubwayScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ContentsScreen()),
+                            builder: (context) => RecommendScreen()),
                       );
                     }
                         : null,

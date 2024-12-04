@@ -1,17 +1,17 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:sub_play/contents/view/contents_loading_screen.dart';
 import '../const/videoList.dart';
+import 'contents_loading_screen.dart';
 
-class ContentsScreen extends StatefulWidget {
-  const ContentsScreen({Key? key}) : super(key: key);
+class RecommendScreen extends StatefulWidget {
+  const RecommendScreen({Key? key}) : super(key: key);
 
   @override
-  State<ContentsScreen> createState() => _ContentsScreenState();
+  State<RecommendScreen> createState() => _RecommendScreenState();
 }
 
-class _ContentsScreenState extends State<ContentsScreen> {
+class _RecommendScreenState extends State<RecommendScreen> {
   int playTime = Random().nextInt(40) + 20; // 최소 20분
   int selectedCount = 0;
   int selectedRuntime = 0; // 선택된 동영상의 재생 시간 합
@@ -215,7 +215,7 @@ class _ContentsScreenState extends State<ContentsScreen> {
                           ? () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ContentsLoadingScreen(contentsNum: selectedCount,)),
+                          MaterialPageRoute(builder: (context) => PlayLoadingScreen(contentsNum: selectedCount,)),
                         );
                       }
                           : null,

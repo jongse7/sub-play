@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../contents/view/contents_screen.dart';
-import '../../favorite/view/favorite_screen.dart';
+import 'package:sub_play/interest/view/interest_screen.dart';
+import 'package:sub_play/play/view/recommend_screen.dart';
 import '../../subway/view/subway_screen.dart';
 
 class RootTab extends StatelessWidget {
@@ -31,8 +30,8 @@ class BottomTapBar extends StatelessWidget {
       body: TabBarView(
         children: [
           SubwayScreen(),
-          ContentsScreen(),
-          FavoriteScreen(),
+          RecommendScreen(),
+          InterestScreen(),
         ],
       ),
       extendBodyBehindAppBar: true,

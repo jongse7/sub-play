@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:sub_play/contents/view/play_screen.dart';
 
-class ContentsLoadingScreen extends StatefulWidget {
+import 'recommend_screen.dart';
+
+class PlayLoadingScreen extends StatefulWidget {
   final int contentsNum;
-  const ContentsLoadingScreen({required this.contentsNum, Key? key}) : super(key: key);
+  const PlayLoadingScreen({required this.contentsNum, Key? key}) : super(key: key);
 
   @override
-  State<ContentsLoadingScreen> createState() => _ContentsLoadingScreenState();
+  State<PlayLoadingScreen> createState() => _PlayLoadingScreenState();
 }
 
-class _ContentsLoadingScreenState extends State<ContentsLoadingScreen> {
+class _PlayLoadingScreenState extends State<PlayLoadingScreen> {
   @override
   void initState() {
     super.initState();
@@ -21,7 +22,7 @@ class _ContentsLoadingScreenState extends State<ContentsLoadingScreen> {
     await Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => PlayScreen()),
+        MaterialPageRoute(builder: (context) => RecommendScreen()),
       );
     });
   }
